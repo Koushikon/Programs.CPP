@@ -25,7 +25,7 @@ int main()
     long people_in_cooch_behar {25100000};
     cout<<"There are about "<<people_in_cooch_behar<<" people in Cooch Behar"<<endl;
 
-    /* Working with long long and long not working properly
+    /* Working with long long not working properly
 
     //   Overloading result with regular initialization syntax
     long people_on_earth = 7'610'100'000'000'000'100'111'111;
