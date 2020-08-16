@@ -11,11 +11,11 @@ int main() {
     // cin>>vowels[5]; //   Runtime error cause array out of bounds
 
     double hi_temps [] {90.1, 67.3, 33.1, 42.8};
-    cout<<"The second temprature: "<< hi_temps[1]<<endl;
-    cout<<"The third temprature: "<< hi_temps[2]<<endl;
+    cout<<"The second temperature: "<< hi_temps[1]<<endl;
+    cout<<"The third temperature: "<< hi_temps[2]<<endl;
 
     hi_temps[1] = 105.2;
-    cout<<"The updated second temprature: "<< hi_temps[1]<<endl;
+    cout<<"The updated second temperature: "<< hi_temps[1]<<endl;
 
     /*
     int test_case [5]; //   In This array declaration all values will be random.
