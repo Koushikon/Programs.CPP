@@ -2,6 +2,6 @@
 !/**/
 !*.*
 .vscode/
-.exe
+*.exe
 desktop.ini
 C++ 11 Std/
