@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     // cout<<"Hellow World";
 
     // cout<<"Hello";
@@ -23,11 +24,11 @@ int main() {
     // cin>>num1;
     // cout<<"You Entered: "<<num1<<endl;
 
-    // cout<<"Ener the first Integer: ";
+    // cout<<"Enter the first Integer: ";
     // cin>>num1;
 
-    // cout<<"Ener the Second Integer: ";
-    // cin>>num2; 
+    // cout<<"Enter the Second Integer: ";
+    // cin>>num2;
     // cout<<"You Entered: "<<num1<<" and "<<num2<<endl;
 
     // cout<<"Enter 2 integers separate with space: ";
