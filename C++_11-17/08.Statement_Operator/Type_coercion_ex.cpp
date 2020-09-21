@@ -11,6 +11,8 @@ int main()
     total = num1 + num2 + num3;
 
     double average{0.0};
+    // The older way to convert variable data type
+    // average = (double)total / count;
     average = static_cast<double>(total) / count;
     cout << "Entered 3 numbers were: " << num1 << ", " << num2 << ", " << num3 << endl
          << "The Sum of those numbers are: " << total << endl
