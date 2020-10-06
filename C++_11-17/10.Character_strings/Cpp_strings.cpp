@@ -42,21 +42,28 @@ int main()
     */
 
      /*
-    // Example -5
-    string s1{"Ball"};
-    for (char c : s1)
-        cout << c << endl;
-    */
+     // Example -5
+     string s1{"Kolkata"};
+     for (size_t i{0}; i < s1.length(); ++i)
+          cout << s1.at(i) << endl; // or s1[i]
+     */
 
      /*
-    // Example -6
+     // Example -6
+     string s1{"Ball"};
+     for (char c : s1)
+        cout << c << endl;
+     */
+
+     /*
+    // Example -7
     string s1{"Kolkata"};
     for (int c : s1)
         cout << c << endl;
     */
 
      /*
-    // Example -7
+    // Example -8
     string s1{"Apple"}, s2{"Banana"}, s3{"Kiwi"}, s4{"apple"}, s5{s1};
     cout << "s1 == s5: " << (s1 == s5) << endl
          << "s1 == s2: " << (s1 == s2) << endl
@@ -68,7 +75,7 @@ int main()
     */
 
      /*
-    // Example -8
+    // Example -9
     string s1{"This is a exam."};
     cout << s1.substr(0, 4) << endl
          << s1.substr(5, 2) << endl
@@ -76,7 +83,7 @@ int main()
     */
 
      /*
-    // Example -9
+    // Example -10
     string s1{"This is a exam."};
     cout << s1.find("This") << endl
          << s1.find("is") << endl
@@ -87,7 +94,7 @@ int main()
     */
 
      /*
-    // Example -10
+    // Example -11
     string s1{"This is a exam."};
     cout << s1.erase(0, 5) << endl
          << s1.erase(5, 4) << endl;
@@ -96,14 +103,14 @@ int main()
     */
 
      /*
-    // Example -11
+    // Example -12
     string s1{"Kolkata"};
     cout << s1.length() << endl;
     s1 += " Jabo.";
     cout << s1 << " has length " << s1.length() << endl;
     */
 
-     // Example -12 - input with C++ Strings
+     // Example -13 - input with C++ Strings
      string s1;
      cin >> s1;
      cout << "with cin = " << s1 << endl;
