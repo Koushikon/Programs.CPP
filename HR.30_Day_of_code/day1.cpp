@@ -21,10 +21,10 @@ using namespace std;
 int main()
 {
 
-    int another_int {0}, i {4};
-    double another_double {0}, d {4.0};
-    string another_string {""}, s {"Hackerone "};
-    
+    int another_int{0}, i{4};
+    double another_double{0}, d{4.2};
+    string another_string{""}, s{"Hackerone "};
+
     cin >> another_int >> another_double;
     cin.ignore();
     getline(cin, another_string);

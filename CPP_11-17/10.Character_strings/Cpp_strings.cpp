@@ -112,13 +112,20 @@ int main()
 
      // Example -13 - input with C++ Strings
      string s1;
+
+     cout << "\nwith cin = ";
      cin >> s1;
-     cout << "with cin = " << s1 << endl;
-     cin.ignore(); // Otherwise we didn't get input stream.
+     // Takes only space's before inputs and then continues.
+     cout << "\t = " << s1 << endl;
+
+     cin.ignore(); // Otherwise we didn't get input stream
+     cout << "\nWith getline = ";
      getline(cin, s1);
-     cout << "with getline(cin, a) = " << s1 << endl;
+     cout << "\t = " << s1 << endl;
+
+     cout << "\nWith getline specific Terminate character = ";
      getline(cin, s1, 'x');
-     cout << "with getline(cin, a, x) = " << s1 << endl;
+     cout << "\t = " << s1 << endl;
 
      return 0;
 }

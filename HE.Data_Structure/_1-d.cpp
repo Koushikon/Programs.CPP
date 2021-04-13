@@ -15,7 +15,7 @@ int main()
 
     for (int j = number_Of_element - 1; j >= 0; j--)
     {
-        cout << ary[j] << endl;
+        cout << ary[j] << "\t";
     }
 
     return 0;
