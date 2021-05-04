@@ -2,7 +2,8 @@
 
 Here almost every c++ files are my Practice files. some of the files getting from internet. I learn all of these from different Website, Online Courses and my Teacher.
 
-![C++ Image](https://github.com/Koushikask/CPP.Programs/blob/master/CPP_logo.svg?raw=true)
+<!-- ![C++ Image](https://github.com/Koushikask/CPP.Programs/blob/master/CPP_logo.svg?raw=true) -->
+<img src="https://github.com/Koushikask/CPP.Programs/blob/master/CPP_logo.svg?raw=true" width="200px">
 
 - C++ Mingw Install Guide for VSCode - [READ](http://code.visualstudio.com/docs/cpp/config-mingw)
 
