@@ -9,7 +9,7 @@ using std::vector;
 
 // Function Prototypes
 void take_input(double &num, int min);
-double products_of_max(vector<double> &values);
+double products_of_max(const vector<double> &values);
 
 int main()
 {
@@ -44,7 +44,7 @@ void take_input(double &num, int min)
     } while (num < min);
 }
 
-double products_of_max(vector<double> &values)
+double products_of_max(const vector<double> &values)
 {
     int max_index1{-1};
     for (size_t i{}; i < values.size(); ++i)
