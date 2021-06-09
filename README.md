@@ -21,4 +21,4 @@
 
 ### C++ Compilers Online
 > [Replit](https://replit.com/languages/cpp) ,
-> [ProgramiZ](https://www.programiz.com/cpp-programming/online-compiler/)
+> [Programiz](https://www.programiz.com/cpp-programming/online-compiler/)
