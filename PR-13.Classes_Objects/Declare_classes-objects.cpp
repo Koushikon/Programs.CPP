@@ -10,8 +10,8 @@ using std::vector;
 class Player
 {
     // Attribute
-    string name{"Acc"};
-    int health{100}, xp{40};
+    string name;
+    int health, xp;
 
     // Methods
     void talk(string);
@@ -30,16 +30,16 @@ class Account
 int main()
 {
     // Debug this program with different breakpoints.
-    Player franks;
-    Player toms;
-
     Account frank_ac;
     Account jim_ac;
 
-    Player players[]{frank_account, Jim_account};
+    Player franks;
+    Player toms;
 
-    vector<Player> player_vec{frank_account};
-    player_vec.push_back(Jim_account);
+    Player players[]{franks, toms};
+
+    vector<Player> player_vec{franks};
+    player_vec.push_back(toms);
 
     Player *enemy{nullptr};
     enemy = new Player();

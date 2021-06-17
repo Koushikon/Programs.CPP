@@ -1,3 +1,0 @@
-# Practiced
-
-C++ Practiced Programs
