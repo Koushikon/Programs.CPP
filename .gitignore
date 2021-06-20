@@ -1,7 +1,8 @@
-# *
-# !/**/
-# !*.*
-.vscode/
 *.exe
-desktop.ini
+
+.vscode/
+# desktop.ini
+
+# Need to be fixed Files
 CPP_Wrong/
+Number-system/
