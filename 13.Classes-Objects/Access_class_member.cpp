@@ -19,7 +19,7 @@ public:
     bool is_down();
 };
 
-class Accout
+class Account
 {
 public:
     string name{"default"};
@@ -40,7 +40,7 @@ public:
 
 int main()
 {
-    Accout frank_ac;
+    Account frank_ac;
     frank_ac.name = "Jimmy";
     frank_ac.balance = 1000000.00;
     frank_ac.deposit(400000.00);

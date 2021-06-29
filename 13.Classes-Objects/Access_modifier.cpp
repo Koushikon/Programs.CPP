@@ -23,7 +23,7 @@ public:
     bool is_down();
 };
 
-class Accout
+class Account
 {
 private:
     string name{"default"};
@@ -67,7 +67,7 @@ int main()
 
     cout << endl;
 
-    Accout frank_ac;
+    Account frank_ac;
     // Access Private Objects
     // frank_ac.balance = 1000000.00; // Compiler error
     // Access Public Objects
@@ -76,7 +76,7 @@ int main()
 
     cout << endl;
 
-    Accout *mary_ac = new Accout;
+    Account *mary_ac = new Account;
     // Access Private Objects
     // mary_ac->balance = 100000.00; // Compiler error
     // Access Public Objects
