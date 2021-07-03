@@ -1,6 +1,6 @@
 # C++ Practice Programs
 
-![CPP_Logo](./_File/CPP_Banner.png)
+![CPP_Logo](./_File/CPP_banner.png)
 
 [![Lines Of Code](https://tokei.rs/b1/github.com/Koushikon/CPP.Programs?category=code)](https://github.com/Koushikon/CPP.Programs)
 
@@ -20,7 +20,7 @@
 
 🚴‍♀️ [Replit][lnk0004] , [Programiz][lnk0005]
 
-```English
+```Plain
     HR -> HackerRank
     HE -> HackerEarth
     CF -> CodeForce
