@@ -19,10 +19,46 @@
 
 🚴‍♀️ [Replit][lnk0004] , [Programiz][lnk0005]
 
+### *Repository Structure*
+
 ```Plain
     HR -> HackerRank
     HE -> HackerEarth
     CF -> CodeForce
+```
+
+```Bash
+├───.vscode
+├───04.Basic_errors
+├───05.Structure_of_cpp
+├───06.Variable_constants
+├───07.Array-Vector
+├───08.Statement-Operator
+├───09.Control_flow
+├───10.Character-Strings
+├───11.Functions
+├───12.Pointers_references
+├───13.Classes-Objects
+├───Algorithm-Specialization
+├───CF.Solves
+├───CPP_20
+├───CPP_Wrong
+├───HE.Arrays_and_Strings
+├───HE.Basic_Programming
+├───HE.Data_Structure
+├───HR.30_Day_of_code
+├───HR.CPP
+├───HR.Problem_Solving
+├───Programs
+│   ├───Fibonacci
+│   ├───Matrices
+│   ├───Matrix_chain_mul
+│   ├───Measure_exec_time
+│   ├───Quick_sort
+│   ├───Sum_values
+│   └───Swapping
+│───_File
+└───Readme.md
 ```
 
 ---
