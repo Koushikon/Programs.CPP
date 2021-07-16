@@ -1,4 +1,4 @@
-// Function Return poinnter
+// Function Return pointer
 #include <iostream>
 
 using std::cout;

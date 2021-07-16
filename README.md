@@ -111,6 +111,16 @@ Inside `.vscode/tasks.json` file in `command` section
 
 ---
 
+## Study:
+
+- `Stream-Words_count-2.cpp`
+- `Append_string.cpp`
+- `String_to_Array.cpp`
+- `Swapping` Entire folder
+- `Matrix_chain_mul` Entire folder
+
+---
+
 <!-- External links  -->
 [lnk0001]: https://en.cppreference.com/w/
 [lnk0002]: https://isocpp.org/
