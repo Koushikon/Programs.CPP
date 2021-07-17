@@ -118,6 +118,7 @@ Inside `.vscode/tasks.json` file in `command` section
 - `String_to_Array.cpp`
 - `Swapping` Entire folder
 - `Matrix_chain_mul` Entire folder
+- `Parsing_string.cpp`
 
 ---
 
