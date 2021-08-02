@@ -1,3 +1,4 @@
+# Prevent executables
 *.exe
 
 # desktop.ini
