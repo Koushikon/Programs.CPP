@@ -36,7 +36,6 @@ int main()
 
     */
 
-
     /*************
      * floating-point type
     *************/
@@ -56,9 +55,8 @@ int main()
     bool game_over {false};
     cout<<"Your game result was "<<game_over<<endl;
 
-
     /*************
-     * Overloading error example
+     * Overloading value warning example
     *************/
     short value1 {30000};
     short value2 {1000};

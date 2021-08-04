@@ -1,7 +1,7 @@
 # Prevent executables
 *.exe
 
-# desktop.ini
+desktop.ini
 
 # Need to be fixed Files
 CPP_Wrong/
