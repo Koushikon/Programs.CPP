@@ -1,6 +1,6 @@
 # C++ Practice Programs
 
-🐱‍🏍 Here almost every `C++` files are my Practice files. I learn all these from different Website, Apps, Online Courses and from my Teacher.
+Here almost every `C++` 🐱‍🏍 files are my Practice files. I learn all these from different Website, Apps, Online Courses and from my Teacher.
 
 ![CPP_Logo](./_Files/CPP_banner.png)
 

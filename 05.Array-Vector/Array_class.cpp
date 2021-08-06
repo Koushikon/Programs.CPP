@@ -1,13 +1,11 @@
 #include <iostream>
 #include <array>
-#include <vector>
 #include <tuple>
 
 using std::array;
 using std::cout;
 using std::endl;
 using std::get;
-using std::vector;
 
 int main()
 {
