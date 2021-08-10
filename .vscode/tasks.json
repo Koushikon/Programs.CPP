@@ -7,6 +7,8 @@
             "command": "g++.exe",
             "args": [
                 "-g",
+                "-Wall",
+                "-std=c++17",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -18,7 +20,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "compiler: C:\\App\\Mingw-w64\\mingw32\\bin\\g++.exe"
         }
     ]
 }
