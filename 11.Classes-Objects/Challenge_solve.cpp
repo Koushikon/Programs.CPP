@@ -12,6 +12,9 @@ using std::vector;
 class Movie;
 class Movies;
 
+// Hardcoded values
+const short MOVIES_APP_VERSION{1};
+
 class Movie
 {
     string name{}, rate{};
@@ -25,6 +28,8 @@ public:
     ~Movie();
 
     void display_movie() const;
+    bool check_single_movie(const string &new_name) const;
+    void increase_watch();
 };
 
 class Movies
@@ -36,6 +41,8 @@ public:
     ~Movies();
 
     void add_movie();
+    bool movie_exists(const string &name) const;
+    void watch_movie();
     void display_movies() const;
 };
 
@@ -55,6 +62,19 @@ void Movie::display_movie() const
          << "\n\n";
 }
 
+bool Movie::check_single_movie(const string &new_name) const
+{
+    bool match{false};
+    if (name == new_name)
+        match = true;
+    return match;
+}
+
+void Movie::increase_watch()
+{
+    watched++;
+}
+
 Movies::Movies() {}
 
 Movies::~Movies() {}
@@ -66,8 +86,22 @@ void Movies::add_movie()
     float star{};
     array<string, 5> rating{"G", "PG", "PG-13", "NC-17", "R"};
 
-    cout << "[+] Movie name? ";
-    std::getline(cin, name);
+    if (movie_list.size() == 0 || movie_list.size() > 0)
+    {
+        cout << "[+] Create a new Movie\n"
+             << "\tMovie name? ";
+        std::getline(cin, name);
+
+        if (movie_list.size() > 0)
+        {
+            while (movie_exists(name))
+            {
+                cout << "[#] This movie is already exists,\n\tTry entering new Movie? ";
+                std::getline(cin, name);
+            }
+        }
+    }
+
     cout << "[+] Movie rating: \n"
          << "\t1 for G\n"
          << "\t2 for PG\n"
@@ -101,9 +135,47 @@ void Movies::add_movie()
     cout << "[#] Movie: " << name << " added Successfully ✔\n";
 }
 
+bool Movies::movie_exists(const string &name) const
+{
+    bool is_movie_matched{false};
+    for (const Movie &movie : movie_list)
+        if (movie.check_single_movie(name))
+            is_movie_matched = true;
+    return is_movie_matched;
+}
+
+void Movies::watch_movie()
+{
+    if (movie_list.size() == 0)
+    {
+        cout << "[#] The movies list is empty, First try to create a movie\n";
+        add_movie();
+    }
+    else if (movie_list.size() > 0)
+    {
+        string name{};
+        cout << "[+] Enter Watched Movie name? ";
+        getline(cin, name);
+
+        bool found{false};
+        for (Movie &movie : movie_list)
+            if (movie.check_single_movie(name))
+            {
+                movie.increase_watch();
+                cout << "[#] Movie: " << name << " watched Successfully ✔\n";
+                found = true;
+            }
+        if (!found)
+            cout << "[#] There aren't any movie name " << name
+                 << ", Try Creating first !\n ";
+    }
+}
+
 void Movies::display_movies() const
 {
     cout << "\n[🥽] Movies list: \n";
+    if (movie_list.size() == 0)
+        cout << "\t--: EMPTY :--\n";
     for (const Movie &movie : movie_list)
         movie.display_movie();
 }
@@ -125,10 +197,18 @@ int main()
     //          << "| \tSo, What's your choice? ";
     // }
 
+    cout << "= = = = = = = = = = =\n"
+         << "Movies® App version " << MOVIES_APP_VERSION << "\n\n";
+
     Movies mvs1;
+    mvs1.watch_movie();
     mvs1.add_movie();
     mvs1.add_movie();
+    mvs1.watch_movie();
+    mvs1.watch_movie();
     mvs1.display_movies();
+
+    cout << "= = = = = X = = = = =\n";
 
     return 0;
 }
