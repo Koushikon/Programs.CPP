@@ -1,4 +1,3 @@
-// Sum of n even numbers
 #include <iostream>
 
 using std::cin;
@@ -7,22 +6,30 @@ using std::endl;
 
 int main()
 {
-    int sum_of_even{0};
-
-    int max_no{}, start_digit{2};
+    int num{};
     cout << "Enter A Number: ";
-    cin >> max_no;
+    cin >> num;
+
+    /*
+     * Sum of even natural numbers
+     * 2 + 4 + 6 + 8 + ... + n  
+    */
 
     // Sum of n even number using loop
-    // for (int i = 0; i < max_no; ++i)
-    // {
-    //     sum_of_even += start_digit;
-    //     start_digit += 2;
-    // }
+    {
+        int sum_of_even{0}, even{2};
+        for (int i = 0; i < num; ++i)
+        {
+            sum_of_even += even;
+            even += 2;
+        }
+        cout << "Loop Solution: Sum of " << num << " Even natural number = " << sum_of_even << endl;
+    }
 
     // Sum of n even number using formula = Optimul one
-    sum_of_even = (max_no * (2 * start_digit + (max_no - 1) * 2)) / 2;
+    int sum_of_even{0}, even{2};
+    sum_of_even = (num * (2 * even + (num - 1) * 2)) / 2;
+    cout << "Optimul Solution: Sum of " << num << " Even natural number = " << sum_of_even << endl;
 
-    cout << "2+4+6+..= Sum of " << max_no << " even number = " << sum_of_even << endl;
     return 0;
 }

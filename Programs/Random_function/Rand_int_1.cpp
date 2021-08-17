@@ -12,7 +12,5 @@ int main()
     srand(time(nullptr));
 
     for (size_t i{1}; i != 10; ++i)
-    {
         cout << "\t" << rand() % max + min;
-    }
 }
