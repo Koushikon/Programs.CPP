@@ -53,7 +53,7 @@ int main()
 
     // Example -10
     vector<double> nums{11.1, 32.5, 71.2, 15.25, 21.50};
-    for (double i{}; i <= nums.size(); ++i)
+    for (double i{}; i < nums.size(); ++i)
         cout << nums.at(i) << endl;
 
     return 0;

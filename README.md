@@ -29,20 +29,18 @@ Here almost every `C++` 🐱‍🏍 files are my Practice files. I learn all the
 
 ```Bash
 ├───.vscode
-├───04.Basic_errors
-├───05.Structure_of_cpp
-├───06.Variable_constants
-├───07.Array-Vector
-├───08.Statement-Operator
-├───09.Control_flow
-├───10.Character-Strings
-├───11.Functions
-├───12.Pointers_references
-├───13.Classes-Objects
+├───02.Basic_errors
+├───03.Structure_of_cpp
+├───04.Variable-Constants
+├───05.Array-Vector
+├───06.Statement-Operator
+├───07.Control_flow
+├───08.Character-Strings
+├───09.Functions
+├───10.Pointers-References
+├───11.Classes-Objects
 ├───Algorithm-Specialization
 ├───CF.Solves
-├───CPP_20
-├───CPP_Wrong
 ├───HE.Arrays_and_Strings
 ├───HE.Basic_Programming
 ├───HE.Data_Structure
@@ -55,9 +53,10 @@ Here almost every `C++` 🐱‍🏍 files are my Practice files. I learn all the
 │   ├───Matrix_chain_mul
 │   ├───Measure_exec_time
 │   ├───Quick_sort
+│   ├───Random_function
 │   ├───Sum_values
 │   └───Swapping
-│───_File
+│───_Files
 └───Readme.md
 ```
 

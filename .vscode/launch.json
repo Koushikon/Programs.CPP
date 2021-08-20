@@ -11,7 +11,7 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "C:/App/Mingw-w64/mingw32/bin",
+            "cwd": "C:/App/Mingw-w64/bin",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
