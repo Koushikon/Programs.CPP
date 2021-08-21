@@ -39,11 +39,10 @@ int main()
     // cout << "\"" << char(26) << "\"";
 
     char ch;
-    int i;
-    for (i = 1; i < 255; i++)
+    for (size_t i{1}; i < 255; i++)
     {
         ch = i;
-        cout << i << "-> " << ch << "\t";
+        cout << i << "-> " << ch << ((i % 10 == 0) ? "\n" : " ");
     }
     return 0;
 }
