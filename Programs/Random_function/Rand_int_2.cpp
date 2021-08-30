@@ -1,8 +1,8 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib> // For rand(), srand()
+#include <ctime>   // for time()
 #include <array>
-#include <iomanip>
+#include <iomanip> // For setw()
 
 using std::array;
 using std::cout;

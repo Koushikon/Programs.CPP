@@ -1,11 +1,14 @@
-# Prevent executables
-*.exe
 
 desktop.ini
 
-# Need to be fixed Files
+# Prevent executables
+*.exe
+
+# Exclude Folders
 CPP_Wrong/
 Programs/Number-system/
+
+# Exclude Files
 HR.CPP/9-1.cpp
 Multiply_with_matrix-2.cpp
 Challenge.txt
