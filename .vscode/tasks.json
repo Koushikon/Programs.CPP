@@ -3,25 +3,71 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: g++.exe build active file",
+            "label": "With GCC 11.2.0",
             "command": "g++.exe",
             "args": [
                 "-g",
                 "-Wall",
-                "-std=c++17",
+                "-std=c++20",
                 "${file}",
                 "-o",
+                // Every executable generate with custom or static name
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": [],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "detail": "compiler: C:\\App\\Mingw-w64\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "With Clang++ 12.0.1",
+            "command": "C:\\App\\Mingw-w64\\bin\\clang++.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-std=c++20",
+                "${file}",
+                "-o",
+                // Every executable generate with custom or static name
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\App\\Mingw-w64\\bin\\clang++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe build active file",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "compiler: cl.exe"
         }
     ]
 }

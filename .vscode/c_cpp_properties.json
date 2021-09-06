@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "G++",
+            "name": "CPPass",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
@@ -10,9 +10,13 @@
                 "UNICODE",
                 "_UNICODE"
             ],
+            // GCC Compiler Path
             "compilerPath": "C:/App/Mingw-w64/bin/g++.exe",
             "intelliSenseMode": "${default}",
-            "cppStandard": "c++17"
+            // Prefered C++ version
+            "cppStandard": "c++20",
+            // Prefered C version
+            "cStandard": "c17"
         }
     ],
     "version": 4
