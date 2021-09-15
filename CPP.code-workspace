@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
+		"files.exclude": {
+			"**/*.ini": true,
+			"**/.git": true,
+			"**/*.o": true,
+			"**/*.exe": true,
+		},
 		"files.associations": {
 			"iostream": "cpp",
 			"array": "cpp",
@@ -88,6 +94,6 @@
 			"typeinfo": "cpp"
 		},
 		"files.defaultLanguage": "${activeEditorLanguage}",
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
 	}
 }
