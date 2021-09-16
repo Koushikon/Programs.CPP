@@ -29,15 +29,35 @@ using namespace std;
 
 int main()
 {
+    /* --- Literal constants --- */
     cout << "Hello, Welcome to the franks carpet cleaning service" << endl;
 
     cout << "How many rooms would you like to cleaned? ";
     int no_of_rooms{0};
     cin >> no_of_rooms;
 
-    // Declared constants
-    const double price_per_room{30};
+    // Normal version
+    /*
+    cout << "\nEstimate for carpet cleaning service" << endl;
+    cout << "\tNo. of rooms: " << no_of_rooms << endl;
+    cout << "\tPrice per room: $" << 30 << endl;
+    cout << "\tCost: $" << 30 * no_of_rooms << endl;
+    cout << "\tTax: $" << 30 * no_of_rooms * 0.06 << endl;
 
+    cout << "------------------------------------" << endl;
+    cout << "\tTotal estimate: $"
+         << (30 * no_of_rooms) + (30 * no_of_rooms * 0.06)
+         << endl;
+    cout << "This estimate is valid for " << 30 << " days.." << endl;
+    */
+
+    // Enhanced version
+    // double price_per_room{30}; // Now change this variable value anywhere in the program
+    // double sales_tax{0.06};    // Now change this variable value anywhere in the program
+    // int estimate_expiry{30};   // Now change this variable value anywhere in the program
+
+    // Declared as constant variable
+    const double price_per_room{30};
     const double sales_tax{0.06};
     const int estimate_expiry{30};
 
@@ -48,7 +68,9 @@ int main()
     cout << "\tTax: $" << price_per_room * no_of_rooms * sales_tax << endl;
 
     cout << "------------------------------------" << endl;
-    cout << "\tTotal estimate: $" << (price_per_room * no_of_rooms) + (price_per_room * no_of_rooms * sales_tax) << endl;
+    cout << "\tTotal estimate: $"
+         << (price_per_room * no_of_rooms) + (price_per_room * no_of_rooms * sales_tax)
+         << endl;
     cout << "This estimate is valid for " << estimate_expiry << " days.." << endl;
 
     return 0;

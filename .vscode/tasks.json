@@ -50,7 +50,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: cl.exe build active file",
+            "label": "With VS 2019",
             "command": "cl.exe",
             "args": [
                 "/Zi",
