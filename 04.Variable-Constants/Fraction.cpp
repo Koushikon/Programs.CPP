@@ -3,6 +3,21 @@
 
 int main()
 {
+    /*************
+     * floating-point type
+    *************/
+
+    float car_payment{401.23f};
+    std::cout << "My car payment: " << car_payment << std::endl;
+
+    double pi{3.14159};
+    std::cout << "The pi is: " << pi << std::endl;
+
+    long double large_amount{2.7e120};
+    std::cout << large_amount << " is a very big number" << std::endl;
+
+    std::cout << "\n= = = = = =" << std::endl;
+
     float number1{1.12345678901234567890f};
     double number2{1.12345678901234567890};
     long double number3{1.12345678901234567890L};
@@ -19,7 +34,7 @@ int main()
               << number2 << " " << sizeof(number2) << "\n"
               << number3 << " " << sizeof(number3) << std::endl;
 
-    std::cout << "= = = = = =" << std::endl;
+    std::cout << "\n= = = = = =" << std::endl;
 
     // Scientific notation 'e' expression
     double number5{192400023};
@@ -34,7 +49,7 @@ int main()
               << number8 << "\n"
               << number9 << std::endl;
 
-    std::cout << "= = = = = =" << std::endl;
+    std::cout << "\n= = = = = =" << std::endl;
 
     double number10{5.6};
     double number11{}; // to 0

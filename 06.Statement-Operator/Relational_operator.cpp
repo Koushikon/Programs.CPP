@@ -8,10 +8,10 @@ int main()
     cin >> num1 >> num2;
 
     cout << boolalpha;
-    cout << num1 << " > " << num2 << " : " << (num1 > num2) << endl;
-    cout << num1 << " >= " << num2 << " : " << (num1 >= num2) << endl;
-    cout << num1 << " < " << num2 << " : " << (num1 < num2) << endl;
-    cout << num1 << " <= " << num2 << " : " << (num1 <= num2) << endl;
+    cout << num1 << " greather than " << num2 << " : " << (num1 > num2) << endl;
+    cout << num1 << " greather than or equal to " << num2 << " : " << (num1 >= num2) << endl;
+    cout << num1 << " less than " << num2 << " : " << (num1 < num2) << endl;
+    cout << num1 << " less than or equal to " << num2 << " : " << (num1 <= num2) << endl;
 
     const int lower{10}, upper{20};
 

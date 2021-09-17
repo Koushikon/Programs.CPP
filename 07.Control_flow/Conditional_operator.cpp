@@ -31,14 +31,11 @@ int main()
     cout << "Enter 2 integers separated by space: ";
     cin >> num1 >> num2;
 
+    // num1 not equal to num2 is that - true or false
     if (num1 != num2)
-    {
         cout << "Largest: " << ((num1 > num2) ? num1 : num2) << endl
              << "Smallest: " << ((num1 < num2) ? num1 : num2) << endl;
-    }
     else
-    {
         cout << "The numbers are the same." << endl;
-    }
     return 0;
 }

@@ -17,11 +17,20 @@ int main()
     int total_amount{100}, total_number{8};
     double average{0.0};
 
+    /*
+    * Since two variables are integer, the compiler will do integer division and that would be 12 | 
+    * Majority Wins
+    */
     average = total_amount / total_number;
-    cout << average << " Since two variables are integer, the compiler will do integer division and that would be 12 | Majority Wins" << endl;
+    cout << average << endl;
 
+    /*
+    * With static_cast now one variable is double and another one was previously double, The 8 
+    * compiler will conver the last interger variable to double and do double division and that 
+    * would be 12.5
+    */
     average = static_cast<double>(total_amount) / total_number;
-    cout << average << " With static_cast now one variable is double and another one was previously double, The compiler will conver the last interger variable to double and do double division and that would be 12.5" << endl;
+    cout << average << endl;
 
     return 0;
 }
