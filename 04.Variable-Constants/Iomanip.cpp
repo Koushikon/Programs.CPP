@@ -1,7 +1,8 @@
 /**
  * @file Iomanip.cpp
  * @author Koushik and from C++ Courses
- * @brief 
+ * @brief <iomanip> header stuff
+ * @link https://en.cppreference.com/w/cpp/io/manip @endlink
  * @version 0.1
  * @date 2021-09-23
  * 

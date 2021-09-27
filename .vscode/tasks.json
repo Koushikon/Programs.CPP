@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "With GCC 11.2.0",
-            "command": "g++.exe",
+            "command": "C:\\App\\Mingw-w64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "-Wall",
