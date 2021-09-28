@@ -81,7 +81,7 @@ int main()
      * @link https://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN @endlink
      * @brief std::numeric_limits<T>::has_quiet_NaN
      * @details Check that type supports the quite_Nan or not
-     * @brief std::numeric_limits<Type>::quiet_NaN()
+     * @brief std::numeric_limits<Type>::quiet_NaN() and std::numeric_limits<double>::signaling_NaN()
      */
 
     std::cout << std::boolalpha;

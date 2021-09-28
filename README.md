@@ -2,7 +2,7 @@
 
 Here almost every `C++` 🐱‍🏍 files are my Practice files. I learn all these from different Website, Apps, Online Courses and from my Teacher.
 
-I'm 🎃 Working on `C++ 20` version and less than that.
+I'm 🎃 Working on `C++20` version and less than that.
 
 ![CPP_Logo](./_Files/CPP_banner.png)
 
