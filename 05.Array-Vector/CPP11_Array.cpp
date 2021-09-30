@@ -10,13 +10,16 @@ using std::get;
 int main()
 {
      array<int, 5> arr = {1, 2, 3, 4, 5};
-     cout << "Number of elements in array is " << arr.size() << "\n";
-     cout << "Maximum number of elements array can hold is " << arr.max_size() << "\n\n";
+
+     cout << "Number of elements in array is " << arr.size() << "\n"
+          << "Maximum number of elements array can hold is " << arr.max_size() << "\n\n";
 
      cout << "C-style Access index 1 is " << arr[1] << "\n"
           << "C-style Access index 2 is " << arr[2] << "\n";
+
      cout << "Array class style index 1 is " << arr.at(1) << "\n"
           << "Array class style index 2 is " << arr.at(2) << "\n";
+
      cout << "Tuple class style index 1 is " << get<1>(arr) << "\n"
           << "Tuple class style index 2 is " << get<2>(arr) << "\n\n";
 
@@ -24,6 +27,7 @@ int main()
      cout << "Array last element is " << arr.back() << "\n\n";
 
      cout << "Check the array is empty or not is " << std::boolalpha << arr.empty() << "\n";
+
      arr.fill(7);
      cout << "Array class style index 1 is " << arr.at(1) << "\n"
           << "Array class style index 2 is " << arr.at(2) << "\n";
