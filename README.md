@@ -62,13 +62,8 @@ I'm 🎃 Working on `C++20` version and less than that.
 
 ## Study:
 
-- `Stream-Words_count-2.cpp`
-- `Append_string.cpp`
-- `String_to_Array.cpp`
 - `Swapping` Entire folder
 - `Matrix_chain_mul` Entire folder
-- `Parsing_string.cpp`
-- `iomanip_parts.cpp`
 
 ---
 

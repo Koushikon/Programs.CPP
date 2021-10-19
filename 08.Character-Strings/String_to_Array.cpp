@@ -1,5 +1,13 @@
-// CPP code to illustrate
-// std::string::data()
+/**
+ * @file String_to_Array.cpp
+ * @author Koushik
+ * @brief C++ Program to illustrate std::string::data() Method
+ * @version 0.1
+ * @date 2021-10-19
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include <iostream>
 #include <string>

@@ -1,4 +1,13 @@
-// CPP program to count the specific words appear how many times in a string.
+/**
+ * @file Stream-Words_count-2.cpp
+ * @author Koushik
+ * @brief CPP program to count the specific words appear how many times in a string.
+ * @version 0.1
+ * @date 2021-10-19
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include <iostream>
 #include <string>
