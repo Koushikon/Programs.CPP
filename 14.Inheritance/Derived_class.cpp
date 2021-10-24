@@ -1,3 +1,14 @@
+/**
+ * @file Redived_class.cpp
+ * @author Koushik
+ * @brief Welcome Inheritance
+ * @version 0.1
+ * @date 2021-10-21
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -60,7 +71,7 @@ public:
     void withdraw(double amount);
 };
 
-Savings_Account::Savings_Account() : intr_rate{} {}
+Savings_Account::Savings_Account() : intr_rate{3.2} {}
 
 Savings_Account::~Savings_Account() {}
 
