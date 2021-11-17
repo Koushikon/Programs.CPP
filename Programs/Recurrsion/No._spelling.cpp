@@ -1,9 +1,14 @@
-
-/*************
- * Number Spelling Recurrsion Program
- * Time Complexity: O(n)
+/**
+ * @file No._spelling.cpp
+ * @author Koushik
+ * @brief Number Spelling Recurrsion Program
+ * @version 0.1
+ * @date 2021-11-17
+ * Time Complexity: O(number of digits), i.e. O(log n)
  * Space Complexity: O(n)
-*************/
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include <iostream>
 #include <string>

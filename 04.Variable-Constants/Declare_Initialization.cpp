@@ -7,7 +7,7 @@ int main()
     int number1{78}; // Recommanded
     std::cout << number1 << std::endl;
 
-    // Direct initialization,
+    // Direct Constructor initialization,
     int number2(78);
     std::cout << number2 << std::endl;
 
