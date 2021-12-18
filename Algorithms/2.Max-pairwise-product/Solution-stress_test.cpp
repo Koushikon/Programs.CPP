@@ -1,8 +1,12 @@
-// Max Pairwise Product Solution
 #include <iostream>
 #include <cmath>
 #include <vector>
 #include <cctype>
+
+/**
+ * * Max Pairwise Product Solution
+ * ! Stress testing
+ */
 
 using std::cin;
 using std::cout;
@@ -16,7 +20,7 @@ void bubbleSort(vector<int> &arr);
 
 int main()
 {
-    int no_of_sequence{}, min_input{}, max_input{};
+    int no_of_sequence{};
 
     // Stress test implementation
     while (true)
@@ -31,7 +35,7 @@ int main()
             value = std::rand() % 100000 + 1;
             cout << value << "  ";
         }
-        cout << "\n";
+        cout << '\n';
 
         // MaxPairwise multiply --Slow
         long long product_1{maxPairwiseProduct_slow(arr)};
@@ -51,69 +55,85 @@ int main()
             cout << "OK!\n";
         else
         {
-            cout << "Wrong " << product_1 << "\t" << product_2 << "\t" << product_4 << "\n";
+            cout << "Wrong " << product_1 << '\t' << product_2 << '\t' << product_4 << '\n';
             break;
         }
 
-        // cout << " Different Max Pairwise product functions:"
-        //      << "\n\tslow version - " << product_1
-        //      << "\n\tFast version - " << product_2
-        //      << "\n\tBubble Sort version - " << product_3 << "\n";
+        /*
+        cout << " Different Max Pairwise product functions:"
+             << "\n\tslow version - " << product_1
+             << "\n\tFast version - " << product_2
+             << "\n\tBubble Sort version - " << product_3 << '\n';
+        */
     }
 
     return 0;
 }
 
-long long maxPairwiseProduct_slow(const vector<int> &arr)
+long long int maxPairwiseProduct_slow(const vector<int> &arr)
 {
     long long product{};
-    for (int i{}; i < arr.size() - 1; ++i)
-        for (int j{i + 1}; j < arr.size(); ++j)
+    for (size_t i = 0; i < arr.size() - 1; i++)
+    {
+        /* code */
+    }
+
+    for (size_t i{}; i < arr.size() - 1; ++i)
+        for (size_t j{i + 1}; j < arr.size(); ++j)
             if (static_cast<long long>(arr.at(i)) * arr.at(j) > product)
                 product = static_cast<long long>(arr.at(i)) * arr.at(j);
     return product;
 }
 
-// long long maxPairwiseProduct_fast_wrong(const vector<int> &arr)
-// {
-//     int maxIndex_1{-1};
-
-//     for (int i{}; i < arr.size(); ++i)
-//         if (maxIndex_1 == -1 || arr.at(i) > arr.at(maxIndex_1))
-//             maxIndex_1 = i;
-
-//     int maxIndex_2{-1};
-//     for (int j{}; j < arr.size(); ++j)
-//         if (arr.at(j) != arr.at(maxIndex_1) && (maxIndex_2 == -1 || arr.at(j) > arr.at(maxIndex_2)))
-//             maxIndex_2 = j;
-
-//     // cout << arr.at(maxIndex_1) <<" - " << arr.at(maxIndex_2);
-//     return (static_cast<long long>(arr.at(maxIndex_1)) * arr.at(maxIndex_2));
-// }
-
-long long maxPairwiseProduct_fast(const vector<int> &arr)
+/*
+long long maxPairwiseProduct_fast_wrong(const vector<int> &arr)
 {
+    int maxIndex_1{-1};
+
+    for (int i{}; i < arr.size(); ++i)
+        if (maxIndex_1 == -1 || arr.at(i) > arr.at(maxIndex_1))
+            maxIndex_1 = i;
+
+    int maxIndex_2{-1};
+    for (int j{}; j < arr.size(); ++j)
+        if (arr.at(j) != arr.at(maxIndex_1) && (maxIndex_2 == -1 || arr.at(j) > arr.at(maxIndex_2)))
+            maxIndex_2 = j;
+
+    // cout << arr.at(maxIndex_1) <<" - " << arr.at(maxIndex_2);
+    return (static_cast<long long>(arr.at(maxIndex_1)) * arr.at(maxIndex_2));
+}
+*/
+
+long long int maxPairwiseProduct_fast(const vector<int> &arr)
+{
+    size_t arrSize{arr.size()};
+
     int max_index1{-1};
-    for (size_t i{}; i < arr.size(); ++i)
+    for (size_t i{}; i < arrSize; ++i)
         if (max_index1 == -1 || arr.at(i) > arr.at(max_index1))
             max_index1 = i;
 
     int max_index2{-1};
-    for (size_t j{}; j < arr.size(); ++j)
-        if (j != max_index1 && (max_index2 == -1 || arr.at(j) > arr.at(max_index2)))
+    for (size_t j{}; j < arrSize; ++j)
+        if ((int)j != max_index1 && (max_index2 == -1 || arr.at(j) > arr.at(max_index2)))
             max_index2 = j;
 
-    return (static_cast<long long>(arr.at(max_index1)) * arr.at(max_index2));
+    return static_cast<long long int>(arr.at(max_index1)) * arr.at(max_index2);
 }
 
 void bubbleSort(vector<int> &arr)
 {
-    for (int i{}; i < arr.size() - 1; ++i)
-        for (int j{}; j < arr.size() - i - 1; ++j)
+    size_t arrSize{arr.size()};
+    for (size_t i{}; i < arrSize; ++i)
+    {
+        for (size_t j{}; j < arrSize - i - 1; ++j)
+        {
             if (arr.at(j) > arr.at(j + 1))
             {
                 arr.at(j + 1) += arr.at(j);
                 arr.at(j) = arr.at(j + 1) - arr.at(j);
                 arr.at(j + 1) -= arr.at(j);
             }
+        }
+    }
 }
