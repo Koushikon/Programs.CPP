@@ -5,15 +5,18 @@ using std::array;
 using std::cout;
 using std::endl;
 
+// Actual array size
+const int ARR_SIZE{7};
+
 // Function Prototype
-void display_array(const array<int, 7> &nums);
-bool check_sorted_unsorted_1(const array<int, 7> &nums, int &&index);
-bool check_sorted_unsorted_2(const array<int, 7> &nums, int &&index);
+void display_array(const array<int, ARR_SIZE> &nums);
+bool check_sorted_unsorted_1(const array<int, ARR_SIZE> &nums, int &&index);
+bool check_sorted_unsorted_2(const array<int, ARR_SIZE> &nums, int &&index);
 
 int main()
 {
-    array<int, 7> arr1{7, 9, 10, 12, 15, 17, 21};
-    array<int, 7> arr2{5, 2, 1, 6, 9, 3, 4};
+    array<int, ARR_SIZE> arr1{7, 9, 10, 12, 15, 17, 21};
+    array<int, ARR_SIZE> arr2{5, 2, 1, 6, 9, 3, 4};
 
     bool result{false};
 
@@ -33,7 +36,7 @@ int main()
  * @param index is the current position.
  */
 
-bool check_sorted_unsorted_1(const array<int, 7> &nums, int &&index)
+bool check_sorted_unsorted_1(const array<int, ARR_SIZE> &nums, int &&index)
 {
     display_array(nums);
     /**
@@ -50,7 +53,7 @@ bool check_sorted_unsorted_1(const array<int, 7> &nums, int &&index)
     return true;
 }
 
-bool check_sorted_unsorted_2(const array<int, 7> &nums, int &&index)
+bool check_sorted_unsorted_2(const array<int, ARR_SIZE> &nums, int &&index)
 {
     display_array(nums);
     /**
@@ -66,7 +69,7 @@ bool check_sorted_unsorted_2(const array<int, 7> &nums, int &&index)
     return true;
 }
 
-void display_array(const array<int, 7> &nums)
+void display_array(const array<int, ARR_SIZE> &nums)
 {
     for (const int &val : nums)
         cout << val << ' ';
