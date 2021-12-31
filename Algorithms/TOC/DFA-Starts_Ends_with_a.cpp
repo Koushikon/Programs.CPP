@@ -12,7 +12,7 @@ void take_input(vector<string> &words);
 void display_words(const vector<string> &words);
 int random_call(const int &&start_point, const int &end_no);
 char random_call(const char &&start_point, const int &&end_no);
-void dfa_starts_with_a(const vector<string> &words);
+void dfa_starts_ends_with_a(const vector<string> &words);
 
 constexpr int vector_max_size{999};
 constexpr int words_max_size{10};
@@ -32,7 +32,7 @@ int main()
     take_input(arr);
 
     // Processing the words
-    dfa_starts_with_a(arr);
+    dfa_starts_ends_with_a(arr);
 
     return 0;
 }
@@ -78,7 +78,7 @@ void display_words(const vector<string> &words)
  * @param words is a vector of strings
  */
 
-void dfa_starts_with_a(const vector<string> &words)
+void dfa_starts_ends_with_a(const vector<string> &words)
 {
     for (size_t i = 0; i < words.size(); i++)
     {

@@ -12,10 +12,12 @@ void take_input(vector<string> &words);
 void display_words(const vector<string> &words);
 int random_call(const int &&start_point, const int &end_no);
 char random_call(const char &&start_point, const int &&end_no);
-void dfa_starts_with_a(const vector<string> &words);
+void dfa_ends_with_0(const vector<string> &words);
 
 constexpr int vector_max_size{999};
 constexpr int words_max_size{10};
+constexpr int no_of_words{2};
+vector<char> alphabet{'0', '1'};
 
 int main()
 {
@@ -32,7 +34,7 @@ int main()
     take_input(arr);
 
     // Processing the words
-    dfa_starts_with_a(arr);
+    dfa_ends_with_0(arr);
 
     return 0;
 }
@@ -56,7 +58,9 @@ void take_input(vector<string> &words)
 
         while (i < char_size)
         {
-            name += random_call('a', 2);
+            int index = random_call(0, no_of_words);
+            cout << index << endl;
+            name += alphabet[index];
             ++i;
         }
     }
@@ -78,13 +82,13 @@ void display_words(const vector<string> &words)
  * @param words is a vector of strings
  */
 
-void dfa_starts_with_a(const vector<string> &words)
+void dfa_ends_with_0(const vector<string> &words)
 {
     for (size_t i = 0; i < words.size(); i++)
     {
         size_t size{words.at(i).length() - 1};
 
-        if (words.at(i).at(0) == 'a' && words.at(i).at(size) == 'a')
+        if (words.at(i).at(size) == '0')
             cout << i + 1 << "th String: " << words.at(i) << " - String Passed" << endl;
         else
             cout << i + 1 << "th String: " << words.at(i) << " - String Failed" << endl;
