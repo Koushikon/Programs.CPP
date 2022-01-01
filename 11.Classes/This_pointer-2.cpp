@@ -38,13 +38,11 @@ void Account::compare_balance(const Account &other)
         cout << "They are not same." << endl;
 }
 
-Account::Account(double bal)
-    : balance{bal}
+Account::Account(double bal) : balance{bal}
 {
 }
 
-Account::Account(const Account &sources)
-    : Account{sources.balance}
+Account::Account(const Account &sources) : Account{sources.balance}
 {
 }
 
