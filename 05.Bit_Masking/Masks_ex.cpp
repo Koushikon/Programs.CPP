@@ -3,6 +3,10 @@
 using std::cout;
 using std::endl;
 
+/**
+ * * A Real life masking example
+ */
+
 const unsigned char mask_bit_0{0b00000001};
 const unsigned char mask_bit_1{0b00000010};
 const unsigned char mask_bit_2{0b00000100};

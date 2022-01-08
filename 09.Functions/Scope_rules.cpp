@@ -8,13 +8,23 @@ using std::endl;
 using std::string;
 using std::vector;
 
+/**
+ * * Program Scope Rules:
+ * * Global / Static duration: Dies when the program dies.
+ * * Local duration: (automatic) dies at end of the block.
+ * * Dynamic duration: we decide when it dies.
+ */
+
 // Function Prototypes
 void global_scope();
 void local_scope();
 void static_local_scope();
 
-// Global Variable: declared outside any class or function.
-// Obviously it preserves the value if we change it, But that's global;
+/**
+ * * Global Variable: declared outside any class or function.
+ * * Obviously it preserves the value if we change it, That's global.
+ */
+
 int september{30};
 
 void global_scope()
