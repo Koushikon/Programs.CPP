@@ -127,5 +127,16 @@ int main()
      getline(cin, s1, 'x');
      cout << "\t = " << s1 << endl;
 
+     // Example -14
+     string name{"StephenHawking"};
+     string fname{name, 0, 7};
+     string lname{name, 7};
+
+     string full_name{};
+     full_name = fname + lname;
+     full_name.insert(7, " ");
+
+     cout << full_name << endl;
+
      return 0;
 }

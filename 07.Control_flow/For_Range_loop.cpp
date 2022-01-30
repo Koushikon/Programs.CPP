@@ -39,6 +39,23 @@ int main()
         else
             cout << c;
     }
+    cout << '\n';
+
+    /**
+     * * Range for loop with initializer condition.
+     * * Its Available in C++20.
+     */
+    for (int multiplyer{5}; int i : {1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+    {
+        cout << (i * multiplyer) << ' ';
+    }
+    cout << '\n';
+
+    for (auto word{"Foo"}; auto c : {'d', 'l', 's'})
+    {
+        cout << word << c << ' ';
+    }
+    cout << '\n';
 
     return 0;
 }
