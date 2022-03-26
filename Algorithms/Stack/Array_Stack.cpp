@@ -5,6 +5,7 @@ using std::endl;
 
 /**
  * * Implementing Stack Data Structure in C++
+ * * An Array Implementation
  */
 
 // Global variables
@@ -22,6 +23,7 @@ bool isEmpty();
 int main()
 {
     {
+        Display();
         PUSH(71);
         PUSH(36);
         PUSH(24);

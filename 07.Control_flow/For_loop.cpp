@@ -25,7 +25,7 @@ int main()
     // }
 
     // Example -5
-    // for (int i{1}, j{5}; i <= 5; ++i, ++j)
+    // for (size_t i{1}, j{5}; i <= 5; ++i, ++j)
     //     cout << i << " + " << j << " = " << (i + j) << endl;
 
     // Example -6

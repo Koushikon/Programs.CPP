@@ -14,5 +14,18 @@ int main()
         else
             cout << val << endl;
     }
+
+    int val{7};
+    do
+    {
+        if (val == -99)
+            break;
+        else if (val == -1)
+            continue;
+        else
+            cout << val << endl;
+        val++;
+    } while (val < 20);
+
     return 0;
 }

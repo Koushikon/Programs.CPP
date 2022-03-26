@@ -4,25 +4,22 @@ using namespace std;
 int main()
 {
     // Example -1
-    // int num{};
-    // cout << "Enter a positive number  -Start the countdown: ";
-    // cin >> num;
+    // int num{7};
     // while (num > 0)
     // {
-    //     cout << num << endl;
+    //     cout << num << ' ';
     //     --num;
     // }
+    // cout << endl;
 
-    // Example -2
-    // int num{};
-    // cout << "Enter a positive number to count upto: ";
-    // cin >> num;
-    // int i{1};
-    // while (num >= i)
-    // {
-    //     cout << i << endl;
-    //     ++i;
-    // }
+    // Example - 2
+    size_t i{1};
+    while (i <= 5)
+    {
+        cout << i << ' ';
+        ++i;
+    }
+    cout << endl;
 
     // Example -3
     // int number{};
