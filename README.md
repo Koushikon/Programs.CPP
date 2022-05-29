@@ -6,7 +6,6 @@ I'm 🎃 Working on `C++20` version and less than that.
 
 ![CPP_Logo](./_Files/CPP_banner.png)
 
-&emsp;[![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://github.com/Koushikon/CPP.Programs) 
 &emsp;[![Lines Of Code](https://tokei.rs/b1/github.com/Koushikon/CPP.Programs?category=code)](https://github.com/Koushikon/CPP.Programs)
 
 ✔ C++ Docs :  🐱‍👓 [CPP Reference][lnk0001] , [ISO CPP][lnk0002]

@@ -23,6 +23,6 @@ int main()
     // Sum of n odd number using formula = Optimul one
     sum_of_odd = (max_no * (2 * start_digit + (max_no - 1) * 2)) / 2;
 
-    cout << "2+4+6+..= Sum of " << max_no << " odd number = " << sum_of_odd << endl;
+    cout << "Optimul Solution: Sum of " << max_no << " Odd natural number = " << sum_of_odd << endl;
     return 0;
 }
