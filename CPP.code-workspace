@@ -10,6 +10,7 @@
 			"**/.git": true,
 			"**/*.o": true,
 			"**/*.exe": true,
+			"LICENSE": true
 		},
 		"files.associations": {
 			"iostream": "cpp",
