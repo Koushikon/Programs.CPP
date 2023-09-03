@@ -113,7 +113,12 @@
 			"semaphore": "cpp",
 			"stack": "cpp",
 			"syncstream": "cpp",
-			"version": "cpp"
+			"version": "cpp",
+			"expected": "cpp",
+			"format": "cpp",
+			"spanstream": "cpp",
+			"stacktrace": "cpp",
+			"stdfloat": "cpp"
 		},
 		"files.defaultLanguage": "${activeEditorLanguage}",
 		"editor.formatOnSave": true,
