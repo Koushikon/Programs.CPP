@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             // GCC Compiler Path
-            "compilerPath": "C:/App/Mingw-w64-Posix/bin/g++.exe",
+            "compilerPath": "C:/App/w64devkit/bin/g++.exe",
             "intelliSenseMode": "${default}",
             // Prefered C++ version
             "cppStandard": "c++20",

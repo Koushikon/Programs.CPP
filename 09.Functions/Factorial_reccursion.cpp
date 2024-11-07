@@ -4,19 +4,21 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-unsigned long long factorial(unsigned long long n);
-
-unsigned long long factorial(unsigned long long n)
-{
-    if (n == 0)
-        return 1;
-    return n * factorial(n - 1);
-}
+int factorial(int n);
 
 int main()
 {
-    unsigned long long number{};
+    int number{};
     cin >> number;
-    cout << factorial(number) << endl;
+
+    int result = factorial(number);
+    cout << "Factorial of " << number << " is " << result << endl;
     return 0;
+}
+
+int factorial(int n)
+{
+    if (n <= 1)
+        return n;
+    return n * factorial(n - 1);
 }

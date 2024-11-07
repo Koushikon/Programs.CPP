@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "With GCC 11.2.0",
-            "command": "C:\\App\\Mingw-w64-Posix\\bin\\g++.exe",
+            "command": "C:\\App\\w64devkit\\bin\\g++.exe",
             "args": [
                 "-g",
                 "-Wall",
@@ -20,12 +20,12 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compiler: C:\\App\\Mingw-w64-Posix\\bin\\g++.exe"
+            "detail": "compiler: C:\\App\\w64devkit\\bin\\g++.exe"
         },
         {
             "type": "cppbuild",
             "label": "With Clang++ 12.0.1",
-            "command": "C:\\App\\Mingw-w64-Posix\\bin\\clang++.exe",
+            "command": "C:\\App\\MinGW-w64-Posix\\bin\\clang++.exe",
             "args": [
                 "-g",
                 "-Wall",
@@ -41,7 +41,7 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compiler: C:\\App\\Mingw-w64-Posix\\bin\\clang++.exe"
+            "detail": "compiler: C:\\App\\MinGW-w64-Posix\\bin\\clang++.exe"
         },
         {
             "type": "cppbuild",
@@ -67,7 +67,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:/App/Mingw-w64-Posix/bin/g++.exe",
+            "command": "C:/App/MinGW-w64-Posix/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -76,7 +76,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:/App/Mingw-w64-Posix/bin"
+                "cwd": "C:/App/MinGW-w64-Posix/bin"
             },
             "problemMatcher": [
                 "$gcc"

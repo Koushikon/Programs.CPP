@@ -118,7 +118,9 @@
 			"format": "cpp",
 			"spanstream": "cpp",
 			"stacktrace": "cpp",
-			"stdfloat": "cpp"
+			"stdfloat": "cpp",
+			"generator": "cpp",
+			"text_encoding": "cpp"
 		},
 		"files.defaultLanguage": "${activeEditorLanguage}",
 		"editor.formatOnSave": true,

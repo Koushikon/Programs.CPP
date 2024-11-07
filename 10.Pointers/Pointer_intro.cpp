@@ -11,18 +11,18 @@ using std::vector;
 
 int main()
 {
-     // Integer, double, char type pointer without initialization
+     // Integer, double, char type pointer declaration without initialization
      int *int_ptr1;
      double *double_ptr1;
      char *char_ptr1;
 
-     // Integer, double, string type pointer with initialization
+     // Integer, double, string type pointer declaration with initialization
      int *int_ptr2{};
      double *double_ptr2{};
      string *string_ptr1{};
 
-     //The size of a pointer is depends upon underlyling processros.
-     // Like for 32bit -> is 4 and 64Bit -> is 8.
+     // The size of a pointer is depends upon underlyling processros.
+     // Like for 32bit -> is 4 byte and 64Bit -> is 8 byte.
      cout << "Size of int pointer is: " << sizeof(int_ptr1) << endl;
      cout << "Size of double pointer is: " << sizeof(double_ptr1) << endl;
      cout << "Size of char pointer is: " << sizeof(char_ptr1) << endl;

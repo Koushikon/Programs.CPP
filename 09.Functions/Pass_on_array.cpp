@@ -32,6 +32,15 @@ void set_array(int arr[], int size, int value)
         arr[i] = value;
 }
 
+// return array from a function
+int *filterArray(int nums[])
+{
+    nums[2] = 15;
+    nums[3] = 150;
+    nums[4] = 1500;
+    return nums;
+}
+
 int main()
 {
     int numbers[5]{77, 55, 64, 80, 61};
@@ -41,6 +50,9 @@ int main()
     set_array(numbers, 5, 211);
 
     print_array2(numbers, 5);
+
+    int *result = filterArray(numbers);
+    print_array1(result, 5);
 
     return 0;
 }
