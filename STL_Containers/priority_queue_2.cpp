@@ -5,7 +5,14 @@ using namespace std;
 
 int main()
 {
+    // creates min-heap
     priority_queue<int, vector<int>, greater<int>> pq1;
+
+    // pq2, pq3 are the same after compilation - default is less
+    // creates max-heap
+    priority_queue<int> pq2;
+    priority_queue<int, vector<int>, less<int>> pq3;
+
     pq1.push(10);
     pq1.push(20);
     pq1.push(30);
@@ -28,14 +35,14 @@ int main()
         cout << "pq1 is not empty." << endl;
     }
 
-    priority_queue<int, vector<int>, greater<int>> pq2;
-    pq2.push(15);
-    pq2.push(25);
-    pq2.push(35); // 35, 25, 15
+    priority_queue<int, vector<int>, greater<int>> pq4;
+    pq4.push(15);
+    pq4.push(25);
+    pq4.push(35); // 35, 25, 15
 
-    pq2.swap(pq1);
+    pq4.swap(pq1);
 
-    cout << "pq1 Top element " << pq1.top() << " pq2 Top element " << pq2.top() << endl;
+    cout << "pq1 Top element " << pq1.top() << " pq4 Top element " << pq4.top() << endl;
 
     return 0;
 }

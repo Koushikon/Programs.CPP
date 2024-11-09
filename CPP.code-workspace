@@ -120,7 +120,8 @@
 			"stacktrace": "cpp",
 			"stdfloat": "cpp",
 			"generator": "cpp",
-			"text_encoding": "cpp"
+			"text_encoding": "cpp",
+			"print": "cpp"
 		},
 		"files.defaultLanguage": "${activeEditorLanguage}",
 		"editor.formatOnSave": true,
