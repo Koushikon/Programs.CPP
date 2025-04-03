@@ -67,6 +67,7 @@ int main()
      * 3rd param: the assigning value
      *
      * integer takes 4 bytes
+     * Learn: https://stackoverflow.com/questions/3948290/what-is-the-safe-way-to-fill-multidimensional-array-using-stdfill
      */
     int stocks[5];
     cout << "Stocks size: " << sizeof(stocks) << endl;
