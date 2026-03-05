@@ -3,8 +3,8 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "With GCC 11.2.0",
-            "command": "C:\\App\\w64devkit\\bin\\g++.exe",
+            "label": "With GCC 15.2.0",
+            "command": "C:\\App\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "-Wall",
@@ -20,7 +20,7 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compiler: C:\\App\\w64devkit\\bin\\g++.exe"
+            "detail": "compiler: C:\\App\\mingw64\\bin\\g++.exe"
         },
         {
             "type": "cppbuild",
@@ -67,7 +67,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:/App/MinGW-w64-Posix/bin/g++.exe",
+            "command": "C:/App/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -76,7 +76,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:/App/MinGW-w64-Posix/bin"
+                "cwd": "C:/App/mingw64/bin"
             },
             "problemMatcher": [
                 "$gcc"
